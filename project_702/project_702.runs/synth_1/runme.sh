@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/anthony/Xilinx_projects/project_702/project_702.runs/synth_1'
+HD_PWD='/home/anthony/git/tony-org/tutorial_2/project_702/project_702.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

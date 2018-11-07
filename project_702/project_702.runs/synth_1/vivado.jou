@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Nov  3 18:20:55 2018
-# Process ID: 32325
-# Current directory: /home/anthony/Xilinx_projects/project_702/project_702.runs/synth_1
+# Start of session at: Tue Nov  6 20:56:59 2018
+# Process ID: 14746
+# Current directory: /home/anthony/git/tony-org/tutorial_2/project_702/project_702.runs/synth_1
 # Command line: vivado -log topHdl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topHdl.tcl
-# Log file: /home/anthony/Xilinx_projects/project_702/project_702.runs/synth_1/topHdl.vds
-# Journal file: /home/anthony/Xilinx_projects/project_702/project_702.runs/synth_1/vivado.jou
+# Log file: /home/anthony/git/tony-org/tutorial_2/project_702/project_702.runs/synth_1/topHdl.vds
+# Journal file: /home/anthony/git/tony-org/tutorial_2/project_702/project_702.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source topHdl.tcl -notrace

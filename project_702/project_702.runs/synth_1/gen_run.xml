@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1541283653">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1541555815">
   <File Type="VDS-TIMING-PB" Name="topHdl_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="topHdl_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="topHdl.dcp"/>
@@ -11,6 +11,19 @@
   <File Type="PA-TCL" Name="topHdl.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ps/ps.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ps/hdl/ps_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Xilinx_projects/topHdl.vhd">
       <FileInfo SFType="VHDL2008">
         <Attr Name="ImportPath" Val="$PPRDIR/../topHdl.vhd"/>
@@ -29,7 +42,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/zc702-ucf-xdc-rdf0173-rev3-0/zc702_rev_3_0.ucf.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Xilinx_docs/ZC702/zc702-ucf-xdc-rdf0173-rev3-0/zc702_rev_3_0.ucf.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Xilinx_docs/ZC702/zc702-ucf-xdc-rdf0173-rev3-0/zc702_rev_3_0.ucf.xdc"/>
         <Attr Name="ImportTime" Val="1361904688"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

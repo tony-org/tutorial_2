@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Sat Nov  3 18:23:16 2018
+| Date         : Tue Nov  6 20:59:34 2018
 | Host         : anthony-666 running 64-bit Ubuntu 16.04.5 LTS
 | Command      : report_control_sets -verbose -file topHdl_control_sets_placed.rpt
 | Design       : topHdl
@@ -61,8 +61,8 @@ Table of Contents
 | Clock Signal |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------+--------------------+------------------+------------------+----------------+
 |  clk200      |                    |                  |                1 |              2 |
-|  clk200      | p_0_out            | cnt[31]_i_1_n_0  |                1 |              2 |
 |  clk200      | PMOD1_0_LS_i_1_n_0 | cnt[31]_i_1_n_0  |                1 |              2 |
+|  clk200      | p_0_out            | cnt[31]_i_1_n_0  |                1 |              2 |
 |  clk200      |                    | cnt[31]_i_1_n_0  |                8 |             62 |
 +--------------+--------------------+------------------+------------------+----------------+
 
