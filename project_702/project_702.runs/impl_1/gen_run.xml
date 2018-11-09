@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1541555817">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="topHdl.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="topHdl_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="topHdl_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="topHdl_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="topHdl_opt.dcp"/>
+  <File Type="OPT-DRC" Name="topHdl_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="topHdl.hwdef"/>
+  <File Type="PWROPT-DCP" Name="topHdl_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="topHdl_placed.dcp"/>
+  <File Type="PLACE-IO" Name="topHdl_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="topHdl_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="topHdl_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="topHdl_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="topHdl_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="topHdl_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="topHdl_physopt.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="topHdl_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="topHdl_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="topHdl_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="topHdl_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="topHdl_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="topHdl.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="topHdl_route_status.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="topHdl_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIN" Name="topHdl.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="topHdl_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="topHdl.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="topHdl_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="topHdl.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="topHdl_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="topHdl.nky"/>
+  <File Type="BITSTR-BMM" Name="topHdl_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="topHdl_clock_utilization_routed.rpt"/>
   <File Type="BG-DRC" Name="topHdl.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="topHdl_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="topHdl.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="topHdl_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-BGN" Name="topHdl.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="topHdl.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="topHdl.ltx"/>
-  <File Type="BITSTR-MMI" Name="topHdl.mmi"/>
-  <File Type="BITSTR-BMM" Name="topHdl_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="topHdl.nky"/>
-  <File Type="BITSTR-RBT" Name="topHdl.rbt"/>
-  <File Type="BITSTR-MSK" Name="topHdl.msk"/>
-  <File Type="BG-BIN" Name="topHdl.bin"/>
-  <File Type="BG-BIT" Name="topHdl.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="topHdl_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="topHdl_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="topHdl_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="topHdl.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="topHdl_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="topHdl_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="topHdl_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="topHdl_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="topHdl_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="topHdl_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="topHdl_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="topHdl_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="topHdl_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="topHdl_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="topHdl_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="topHdl_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="topHdl_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="topHdl_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="topHdl_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="topHdl_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="topHdl_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="topHdl_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="topHdl_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="topHdl_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="topHdl_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="topHdl_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="topHdl_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="topHdl_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="topHdl_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="topHdl_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="topHdl_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="topHdl_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="topHdl_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="topHdl_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="topHdl_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="topHdl_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="topHdl_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="topHdl_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="topHdl_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="topHdl_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="topHdl_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="topHdl_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="topHdl_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="topHdl_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="topHdl_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="topHdl_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="topHdl_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="topHdl.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="topHdl_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="topHdl_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="topHdl_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="topHdl_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="topHdl_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="topHdl_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="topHdl_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="topHdl.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/ps/ps.bd">
