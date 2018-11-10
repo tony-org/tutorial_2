@@ -56,9 +56,6 @@
 
 /* Definitions */
 #define GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
-#define LED 0xC3
-#define LED_DELAY 100000000
-#define LED_CHANNEL 1
 
 XGpio Gpio;
 
@@ -69,29 +66,24 @@ int main()
     int cnt = 0;
     int Status;
     int pBtn;
-    int led = LED;
 
     Status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
     if (Status != XST_SUCCESS) {
     	return XST_FAILURE;
     }
 
-    XGpio_SetDataDirection(&Gpio,LED_CHANNEL,0x00);
-
     while(1) {
     	// XGpio_DiscreteRead(XGpio * InstancePtr, unsigned Channel)
     	//XGpio_DiscreteWrite(XGpio * InstancePtr, unsigned Channel, u32 Data)
 
     	//pBtn = XGpio_DiscreteRead(&Gpio,0x0);
-    	//XGpio_DiscreteWrite(&Gpio,LED_CHANNEL,led);
+    	XGpio_DiscreteWrite(&Gpio,1,0xC3);
 
 
     	cnt++;
     	if(cnt == 50000000) {
     		print("Hello World\n\r");
     		cnt = 0;
-    		led = ~led;
-    		XGpio_DiscreteWrite(&Gpio,LED_CHANNEL,led);
     	}
     }
 

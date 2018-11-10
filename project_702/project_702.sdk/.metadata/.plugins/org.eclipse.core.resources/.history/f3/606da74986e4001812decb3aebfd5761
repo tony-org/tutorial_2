@@ -76,14 +76,12 @@ int main()
     	return XST_FAILURE;
     }
 
-    XGpio_SetDataDirection(&Gpio,LED_CHANNEL,0x00);
-
     while(1) {
     	// XGpio_DiscreteRead(XGpio * InstancePtr, unsigned Channel)
     	//XGpio_DiscreteWrite(XGpio * InstancePtr, unsigned Channel, u32 Data)
 
     	//pBtn = XGpio_DiscreteRead(&Gpio,0x0);
-    	//XGpio_DiscreteWrite(&Gpio,LED_CHANNEL,led);
+    	XGpio_DiscreteWrite(&Gpio,LED_CHANNEL,led);
 
 
     	cnt++;
