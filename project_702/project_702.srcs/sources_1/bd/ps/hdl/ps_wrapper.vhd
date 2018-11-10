@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
---Date        : Tue Nov  6 20:56:53 2018
+--Date        : Fri Nov  9 19:17:50 2018
 --Host        : anthony-666 running 64-bit Ubuntu 16.04.5 LTS
 --Command     : generate_target ps_wrapper.bd
 --Design      : ps_wrapper
@@ -33,7 +33,8 @@ entity ps_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    gpio_rtl_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end ps_wrapper;
 
@@ -60,7 +61,8 @@ architecture STRUCTURE of ps_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    gpio_rtl_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component ps;
 begin
@@ -86,6 +88,7 @@ ps_i: component ps
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      gpio_rtl_tri_o(3 downto 0) => gpio_rtl_tri_o(3 downto 0)
     );
 end STRUCTURE;

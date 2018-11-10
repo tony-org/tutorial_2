@@ -25,7 +25,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/anthony/git/tony-org/tutorial_2/project_702/project_702.cache/wt [current_project]
 set_property parent.project_path /home/anthony/git/tony-org/tutorial_2/project_702/project_702.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
@@ -35,6 +35,12 @@ read_vhdl -library xil_defaultlib /home/anthony/git/tony-org/tutorial_2/project_
 read_vhdl -vhdl2008 -library xil_defaultlib /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/imports/Xilinx_projects/topHdl.vhd
 add_files /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ps.bd
 set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_processing_system7_0_0/ps_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_rst_ps7_0_50M_0/ps_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_rst_ps7_0_50M_0/ps_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ip/ps_auto_pc_0/ps_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/anthony/git/tony-org/tutorial_2/project_702/project_702.srcs/sources_1/bd/ps/ps_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

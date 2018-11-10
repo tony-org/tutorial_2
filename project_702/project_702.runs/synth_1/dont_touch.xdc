@@ -9,7 +9,35 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps || ORIG_REF_
 # IP: bd/ps/ip/ps_processing_system7_0_0/ps_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps_processing_system7_0_0 || ORIG_REF_NAME==ps_processing_system7_0_0} -quiet] -quiet
 
+# IP: bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps_axi_gpio_0_0 || ORIG_REF_NAME==ps_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/ps/ip/ps_ps7_0_axi_periph_0/ps_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps_ps7_0_axi_periph_0 || ORIG_REF_NAME==ps_ps7_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/ps/ip/ps_rst_ps7_0_50M_0/ps_rst_ps7_0_50M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps_rst_ps7_0_50M_0 || ORIG_REF_NAME==ps_rst_ps7_0_50M_0} -quiet] -quiet
+
+# IP: bd/ps/ip/ps_auto_pc_0/ps_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ps_auto_pc_0 || ORIG_REF_NAME==ps_auto_pc_0} -quiet] -quiet
+
 # XDC: bd/ps/ip/ps_processing_system7_0_0/ps_processing_system7_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ps_processing_system7_0_0 || ORIG_REF_NAME==ps_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ps_axi_gpio_0_0 || ORIG_REF_NAME==ps_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0_ooc.xdc
+
+# XDC: bd/ps/ip/ps_axi_gpio_0_0/ps_axi_gpio_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ps_axi_gpio_0_0 || ORIG_REF_NAME==ps_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/ps/ip/ps_rst_ps7_0_50M_0/ps_rst_ps7_0_50M_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ps_rst_ps7_0_50M_0 || ORIG_REF_NAME==ps_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/ps/ip/ps_rst_ps7_0_50M_0/ps_rst_ps7_0_50M_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ps_rst_ps7_0_50M_0 || ORIG_REF_NAME==ps_rst_ps7_0_50M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: bd/ps/ip/ps_auto_pc_0/ps_auto_pc_0_ooc.xdc
 
 # XDC: bd/ps/ps_ooc.xdc

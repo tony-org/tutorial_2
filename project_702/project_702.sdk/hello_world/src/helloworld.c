@@ -47,14 +47,39 @@
 
 #include <stdio.h>
 #include "platform.h"
+
+/* Includes */
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
 #include "xil_printf.h"
+
+/* Definitions */
+#define GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+
+XGpio Gpio;
 
 
 int main()
 {
     init_platform();
     int cnt = 0;
+    int Status;
+    int pBtn;
+
+    Status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+    	return XST_FAILURE;
+    }
+
     while(1) {
+    	// XGpio_DiscreteRead(XGpio * InstancePtr, unsigned Channel)
+    	//XGpio_DiscreteWrite(XGpio * InstancePtr, unsigned Channel, u32 Data)
+
+    	//pBtn = XGpio_DiscreteRead(&Gpio,0x0);
+    	XGpio_DiscreteWrite(&Gpio,1,0xC3);
+
+
     	cnt++;
     	if(cnt == 50000000) {
     		print("Hello World\n\r");
